@@ -1,0 +1,92 @@
+#header{
+    color:white;
+    text-align: center;
+    font-size: 200%;
+}
+marquee{
+    background-color: cyan;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0;
+}
+#navbar{
+    background-color:azure;
+    height: 60px;
+
+}
+.nav{
+    margin-right: 250px;
+    font-size: 25px;
+    font-family: cursive;
+    text-decoration: none;
+}
+#logo{
+    font-size: 35px;
+}
+nav{
+    color:white;
+}
+#div{
+    text-align:center;
+    border-radius: 1%;
+    font-family: cursive;
+    width: 210vh;
+    
+}
+#imagenavbar{
+    border-radius: 40%;
+}
+body{
+    background: linear-gradient(to right ,#614385,#516395);
+}
+#name{
+    font-family:cursive;
+    font-style: oblique;
+    font-size: 50px;
+    color: azure;
+}
+#about{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    padding:25px;
+    border-radius: 55%;
+}
+#Certification{
+    background-color: azure;
+    padding:20px;
+    border-radius: 55%;
+}
+#cer{
+    margin-bottom:2px;
+}
+#Skills{
+    background-color: azure;
+    padding:20px;
+}
+#sk{
+    margin-bottom:2px;
+}
+#bottom{
+    text-decoration: none;
+    font-size: larger;
+    background-color:azure;
+    padding: 25px;
+
+}
+#link{
+    text-decoration:none;
+    color:black;
+}
+#info{
+    padding-left: 600px;
+}
+#Contact{
+    margin-bottom:18px;
+    text-align: center;
+    
+}
+footer{
+    background-color: azure;
+    
+}
