@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function calc(val)
+        {
+            document.getElementById("text").value +=val;
+
+        }
+        function show()
+        {
+            var x=document.getElementById("text").value;
+            var y=eval(x);
+            document.getElementById("text").value=y;
+        }
+        function del()
+        {
+            document.getElementById("text").value=" ";
+        }
+
+    </script>
+    <style>
+        #text{
+        height: 50px;
+        width: 400px;
+        color: #D4D4D2;
+        background-color: #1C1C1C;
+        border: none;
+        font-size: 50px;
+        }
+    
+        .button{
+            height: 50px;
+            width: 70px;
+            border-radius:49%;
+            font-size: large;
+            margin: 10px;
+            border: none;
+            
+        }
+        #but{
+            color:#1C1C1C;
+            background-color: #D4D4D2;
+        }
+        #but1{
+            color:#D4D4D2;
+            background-color: #FF9500;
+        }
+        #but2{
+            color:#D4D4D2;
+            background-color: #505050;
+        }
+        table{
+            background-color: #1C1C1C;
+            height: 450px;
+            border-radius:5%;
+        }
+    </style>
+</head>
+<body>
+    
+    <table id="table" align="center">
+        <h1 align="center" >Welcome to Iphone's Calculator </h1>
+        <tr>
+            <td colspan="4"><input type="text" id="text" placeholder="0"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  value="AC" onclick="del()" id="but" class="button"></td>
+            <td></td>
+            <td><input type="button"  value="%" onclick="calc('%')" id="but" class="button"></td>
+            <td><input type="button"  value="/" onclick="calc('/')" id="but1" class="button"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  value="7" onclick="calc(7)" id="but2" class="button"></td>
+            <td><input type="button"  value="8" onclick="calc(8)" id="but2" class="button"></td>
+            <td><input type="button"  value="9" onclick="calc(9)" id="but2" class="button"></td>
+            <td><input type="button"  value="*" onclick="calc('*')" id="but1" class="button"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  value="4" onclick="calc(4)" id="but2" class="button"></td>
+            <td><input type="button"  value="5" onclick="calc(5)" id="but2" class="button"></td>
+            <td><input type="button"  value="6" onclick="calc(6)" id="but2" class="button"></td>
+            <td><input type="button"  value="-" onclick="calc('-')" id="but1" class="button"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  value="1" onclick="calc(1)" id="but2" class="button"></td>
+            <td><input type="button"  value="2" onclick="calc(2)" id="but2" class="button"></td>
+            <td><input type="button"  value="3" onclick="calc(3)" id="but2" class="button"></td>
+            <td><input type="button"  value="+" onclick="calc('+')" id="but1" class="button"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button"  value="0" onclick="calc(0)" id="but2" class="button"></td>
+            <td><input type="button"  value="." onclick="calc('.')" id="but2" class="button"></td>
+            <td><input type="button"  value="=" onclick="show()" id="but1" class="button"></td>
+        </tr>
+    </table>
+</body>
+</html>
